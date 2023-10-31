@@ -18,7 +18,7 @@ New cards are part of the [PyQuest Card Game](https://github.com/Python3-Trainin
 
 ## The Group
 
-New videps will be released on the [Python Group](https://www.facebook.com/groups/nagyspythontraining).
+New videos will be released on the [Python Group](https://www.facebook.com/groups/nagyspythontraining).
 
 Enjoy!
 
