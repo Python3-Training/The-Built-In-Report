@@ -5,7 +5,9 @@ import sys
 version = sys.version.split(' ')[0] + '_'
 version += sys.platform.upper()
 
-covered = ['False', 'None', 'True', 'bool']
+covered = ['False', 'None', 'True', 'bool',
+           'type', 'int', 'eval', 'quit', 'exit',
+           'input']
 
 def report(a_list, a_mod):
     for ss, item in enumerate(a_list,1):
