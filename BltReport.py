@@ -1,9 +1,7 @@
 #!/usr/bin/env python3
 # Mission: Keep track of Builtins.
 
-import sys
-version = sys.version.split(' ')[0] + '_'
-version += sys.platform.upper()
+import MkEvalFile
 
 covered = ['False', 'None', 'True', 'bool',
            'type', 'int', 'eval', 'quit', 'exit',
@@ -24,8 +22,11 @@ others = list()
 common = ['False', 'None', 'True']
 uncommon = []
 sigma = dir(__builtins__)
-with open(version + '.eval', 'w') as fh:
-    print(sigma, file=fh)
+
+import os.path
+if not os.path.exists(MkEvalFile.get_fn()):
+    MkEvalFile.create()
+
 # sigma = sorted(dir(__builtins__), key=lambda a: len(a))
 for ss, item in enumerate(sigma,1):
     if item.startswith('_'):
@@ -43,4 +44,5 @@ sigma = 0
 for a_list in uncommon, common, others:
     sigma += len(a_list)
 
+version = MkEvalFile.get_version()
 print(f'\nVersion {version}, Total = {sigma:>03}')

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Mission: Show what has changed.
+# Mission: Show what has changed between .eval files.
 
 def report(a_list, a_mod):
     for ss, item in enumerate(a_list,1):
@@ -25,7 +25,7 @@ for ka in items:
     for kb in items:
         if ka is kb:
             continue
-        print(ka, kb)
+        print(ka, kb, sep = ' ~v~ ')
         difa = items[ka] - items[kb]
         difb = items[kb] - items[ka]
         if difa == difb:
@@ -34,8 +34,9 @@ for ka in items:
         else:
             a_union = difa.union(difb)
             if a_union in gotcha:
-                print('\tmeh... ', end = '')
+                print('\tmeh... ')
             gotcha.append(a_union)
-            print('\t', *a_union)
+            for ss, line in enumerate(sorted(a_union), 1):
+                print(f'\t{ss}.) {line}')
         print()
         
