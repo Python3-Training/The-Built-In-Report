@@ -5,7 +5,8 @@ import MkEvalFile
 
 covered = ['False', 'None', 'True', 'bool',
            'type', 'int', 'eval', 'quit', 'exit',
-           'input']
+           'input','print', 'copyright', 'credits',
+           'license', 'vars']
 
 def report(a_list, a_mod):
     for ss, item in enumerate(a_list,1):
@@ -45,4 +46,8 @@ for a_list in uncommon, common, others:
     sigma += len(a_list)
 
 version = MkEvalFile.get_version()
-print(f'\nVersion {version}, Total = {sigma:>03}')
+print(f"\nVersion {version}, \
+Total = {sigma:>03} \n\
+Common = {len(common)} \
+Covered = {len(covered)} \
+({int((len(covered)/len(common))*100)}%)")
