@@ -6,8 +6,9 @@ import MkEvalFile
 covered = ['False', 'None', 'True', 'bool',
            'type', 'int', 'eval', 'quit', 'exit',
            'input','print', 'copyright', 'credits',
-           'license', 'vars', 'isinstance', 'hasattr',
-           'setattr', 'issubclass']
+           'license', 'vars', 'isinstance', 'issubclass',
+           'hasattr','setattr', 'getattr', 'delattr',
+           'object']
 
 def report(a_list, a_mod):
     for ss, item in enumerate(a_list,1):
