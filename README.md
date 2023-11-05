@@ -4,7 +4,7 @@
 
 The mission of this project is to review each and every one of Python's built-in's.
 
-Also known as the "**Built-In Report**," the mascot for this project is the **B**acon, **L**ettuce and **T**omato Sandwich. (Turkey, or ham, is just fine ;-)
+Also known as the "**Built-In Report**," the mascot for this project is the **B**acon, **L**ettuce and **T**omato Sandwich. (*)
 
 (i.e. One must tolerate such whimsicals. -Certainly for a project helping Pythoneers master the world's most popular programming language ... named after ***Monty Python***?)
 
@@ -23,5 +23,8 @@ New videos will be released on the [Python Group](https://www.facebook.com/group
 Enjoy!
 
 -Rn
+
+
+p.s. Turkey, Ham, or Tofu bacons 'be just fine, 'maities ;-)
 
 
