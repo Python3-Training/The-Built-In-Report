@@ -25,6 +25,6 @@ Enjoy!
 -Rn
 
 
-p.s. Turkey, Ham, or Tofu bacons 'be just fine, 'maities - cant we all just ***get along***? **;-)**
+p.s. Turkey, Ham, or Tofu bacons 'be just fine, 'maities. Toleration == Civilization ... can't we all just ***get along***? **;-)**
 
 
