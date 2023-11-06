@@ -8,7 +8,7 @@ covered = ['False', 'None', 'True', 'bool',
            'input','print', 'copyright', 'credits',
            'license', 'vars', 'isinstance', 'issubclass',
            'hasattr','setattr', 'getattr', 'delattr',
-           'object']
+           'object','enumerate']
 
 def report(a_list, a_mod):
     for ss, item in enumerate(a_list,1):
