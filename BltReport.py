@@ -9,7 +9,7 @@ covered = ['False', 'None', 'True', 'bool',
            'license', 'vars', 'isinstance', 'issubclass',
            'hasattr','setattr', 'getattr', 'delattr',
            'object','enumerate', 'range', 'id', 'repr',
-           'str', 'compile', 'locals', 'globals',
+           'str', 'locals', 'globals',
            'exec']
 
 def report(a_list, a_mod):
