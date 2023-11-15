@@ -9,8 +9,8 @@ covered = ['False', 'None', 'True', 'bool',
            'license', 'vars', 'isinstance', 'issubclass',
            'hasattr','setattr', 'getattr', 'delattr',
            'object','enumerate', 'range', 'id', 'repr',
-           'str', 'locals', 'globals',
-           'exec']
+           'str', 'locals', 'globals', 'exec',
+           'compile', 'staticmethod', 'callable']
 
 def report(a_list, a_mod):
     for ss, item in enumerate(a_list,1):
