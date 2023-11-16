@@ -10,7 +10,8 @@ covered = ['False', 'None', 'True', 'bool',
            'hasattr','setattr', 'getattr', 'delattr',
            'object','enumerate', 'range', 'id', 'repr',
            'str', 'locals', 'globals', 'exec',
-           'compile', 'staticmethod', 'callable']
+           'compile', 'staticmethod', 'callable',
+           'classmethod']
 
 def report(a_list, a_mod):
     for ss, item in enumerate(a_list,1):
