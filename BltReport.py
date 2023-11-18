@@ -11,7 +11,7 @@ covered = ['False', 'None', 'True', 'bool',
            'object','enumerate', 'range', 'id', 'repr',
            'str', 'locals', 'globals', 'exec',
            'compile', 'staticmethod', 'callable',
-           'classmethod']
+           'classmethod','set']
 
 def report(a_list, a_mod):
     for ss, item in enumerate(a_list,1):
