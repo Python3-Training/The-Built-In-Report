@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Mission: Keep track of Builtins.
+# Mission: Keep track of cross-plat 'builtins.
 
 import MkEvalFile
 
