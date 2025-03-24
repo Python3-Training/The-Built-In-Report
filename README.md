@@ -10,15 +10,11 @@ Also known as the "**Built-In Report**," the mascot for this project is the **B*
 
 ## Video Creations
 
-Videos are now available on [Udemy](https://www.udemy.com/course/thebuiltinreport/?referralCode=28A49D53C71B9229997D).
+Videos are now available on [Ko-FI](https://ko-fi.com/randallnagy)).
 
 ## PyQuest Cards
 
 New cards are part of the [PyQuest Card Game](https://github.com/Python3-Training/PyQuest/tree/main/CardGame).
-
-## The Group
-
-New videos will be released on the [Python Group](https://www.facebook.com/groups/nagyspythontraining).
 
 Enjoy!
 
