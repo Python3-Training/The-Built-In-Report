@@ -10,7 +10,7 @@ Also known as the "**Built-In Report**," the mascot for this project is the **B*
 
 ## Video Creations
 
-Videos are now available on [Ko-FI](https://ko-fi.com/randallnagy).
+Videos are now available [here](https://www.youtube.com/watch?v=Rgnu7Nz4d3M&t=21s).
 
 ## PyQuest Cards
 
