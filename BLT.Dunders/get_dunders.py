@@ -15,7 +15,7 @@ def find_tokens_starting_with_underscore(filename):
     """
     found_tokens = []
     # Use 'with open()' to ensure the file is closed automatically
-    with open(filename, 'r') as f:
+    with open(filename, 'r', encoding='utf-8') as f:
         # Read the entire file content as a single string
         content = f.read()
         
@@ -28,30 +28,16 @@ def find_tokens_starting_with_underscore(filename):
         
         # Use re.findall to find all occurrences of the pattern in the content
         found_tokens = re.findall(pattern, content)
-        
-    # Return a set of tokens to ensure uniqueness, then convert back to a list
-    # to list all occurrences, keep as list; if only unique tokens are needed, 
-    # use set(found_tokens)
-    return found_tokens
+    return sorted(set(found_tokens))
 
-# --- Example Usage ---
 if __name__ == "__main__":
-    # 1. Create a dummy text file for testing
-    dummy_filename = "sample_text.txt"
-    with open(dummy_filename, "w") as f:
-        f.write("This is a sample text file.\n")
-        f.write("It contains some tokens like __init__, __main, and __some_variable.\n")
-        f.write("It also includes things like __not a match as it is not space delimited__.\n")
-        f.write("Also, __another_token__ and end of line __endline_token\n")
+    root = "3. Data model — Python 3.14.2 documentation"
+    input_file  = root + ".txt"
+    report_file = input_file + '.txt'
+    tokens = find_tokens_starting_with_underscore(input_file)
 
-    # 2. Run the function
-    tokens = find_tokens_starting_with_underscore(dummy_filename)
-
-    # 3. Print the results
     print(f"Found {len(tokens)} space-delimited '__' tokens:")
-    for token in tokens:
-        print(f"- {token}")
-    
-    # Optional: remove the dummy file
-    # import os
-    # os.remove(dummy_filename)
+    with open(report_file, 'w') as fh:
+        for ss, token in enumerate(tokens,1):
+            print(f"{ss:03}.) {token}", file=fh)
+
