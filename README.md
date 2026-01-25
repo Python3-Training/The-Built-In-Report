@@ -2,7 +2,7 @@
 
 ## Welcome to the BLT Report
 
-The mission of this project is to review each and every one of Python's built-in's.
+The mission of this project is to review each and every one of Python's built-in's. [Dunders included](https://www.youtube.com/watch?v=g5lW_fRD0F0)
 
 Also known as the "**Built-In Report**," the mascot for this project is the **B**acon, **L**ettuce and **T**omato Sandwich. (*)
 
@@ -22,6 +22,7 @@ Enjoy!
 
 
 p.s. Turkey, Ham, or Tofu bacons 'be just fine, 'maities. Toleration == Civilization ... can't we all just ***get along***? **;-)**
+
 
 
 
