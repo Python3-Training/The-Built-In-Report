@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 # Mission: Keep track of cross-plat 'builtins.
 
+# Rev: 1.1.0
+
 import MkEvalFile
 
 covered = ['False', 'None', 'True', 'bool',
@@ -13,6 +15,25 @@ covered = ['False', 'None', 'True', 'bool',
            'compile', 'staticmethod', 'callable',
            'classmethod','set', 'dict', 'hash',
            'frozenset']
+
+def diff_eval(file_a, file_b):
+    e13 = ''
+    with open(file_a) as fh:
+        x13 = eval(fh.read())
+        print(type(x13), len(x13))
+        e13 = set(x for x in x13 if x[0] != '_' and x.islower()) # beep
+        print(e13)
+
+    e10 = ''
+    with open(file_b) as fh:
+        x13 = eval(fh.read())
+        print(type(x13), len(x13))
+        e10 = set(x for x in x13 if x[0] != '_' and x.islower()) # boop
+
+    ll = list(e13 - e10)
+    ll.sort()
+    return ll
+
 
 def report(a_list, a_mod):
     for ss, item in enumerate(a_list,1):
@@ -57,3 +78,6 @@ Total = {sigma:>03} \n\
 Common = {len(common)} \
 Covered = {len(covered)} \
 ({int((len(covered)/len(common))*100)}%)")
+
+
+
