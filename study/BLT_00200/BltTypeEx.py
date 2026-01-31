@@ -1,13 +1,11 @@
 #!/usr/bin/env python3
-# MISSION: tbd.
-# STATUS: tbd.
-# VERSION: 1.1.0
-# NOTES: tbd.
+# MISSION: Demo Cards - Demonstrate extended type() usage
+# STATUS: Production
+# VERSION: 1.0.0
+# NOTES: Video support.
 # DATE: 2026-01-25 10:56:41
 # FILE: BltTypeEx.py
-# AUTHOR: tbd.
-# File: BltTypeEx.py
-# Mission: Demonstrate extended type() usage
+# AUTHOR: Randall Nagy
 #
 class zclass:
     def __init__(self, **kwargs):
