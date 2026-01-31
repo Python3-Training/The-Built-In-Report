@@ -1,5 +1,13 @@
+# MISSION: tbd.
+# STATUS: tbd.
+# VERSION: 0.0.0
+# NOTES: tbd.
+# DATE: 2026-01-31 06:43:54
+# FILE: get_dunders.py
+# AUTHOR: tbd.
 # Generative: create a python program to list all of the
 # space delimited '.__' tokens in a text file.
+#
 import re
 
 def find_tokens_starting_with_underscore(filename):
@@ -30,12 +38,15 @@ def find_tokens_starting_with_underscore(filename):
         found_tokens = re.findall(pattern, content)
     return sorted(set(found_tokens))
 
-if __name__ == "__main__":
+
+def get_dunders():
     root = "3. Data model — Python 3.14.2 documentation"
     input_file  = root + ".txt"
     report_file = input_file + '.txt'
-    tokens = find_tokens_starting_with_underscore(input_file)
+    return find_tokens_starting_with_underscore(input_file)
 
+if __name__ == '__main__':
+    tokens = get_dunders()
     print(f"Found {len(tokens)} space-delimited '__' tokens:")
     with open(report_file, 'w') as fh:
         for ss, token in enumerate(tokens,1):
